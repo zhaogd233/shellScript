@@ -1,0 +1,62 @@
+{\rtf1\ansi\ansicpg936\cocoartf1348\cocoasubrtf170
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset134 STHeitiSC-Light;}
+{\colortbl;\red255\green255\blue255;\red221\green32\blue103;\red254\green112\blue56;\red230\green87\blue141;
+\red255\green83\blue8;\red254\green73\blue64;}
+\margl1440\margr1440\vieww19300\viewh11580\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0\fs24 \cf0 	
+\f1 \'b9\'d8\'d3\'da
+\f0 android 
+\f1 \'b7\'b4\'b1\'e0\'d2\'eb\'a1\'a3\'d0\'de\'b8\'c4\'a1\'a3\'bb\'d8\'b1\'e0\'d2\'eb\'b5\'c4\'b9\'a4\'be\'df\'ca\'b9\'d3\'c3\'cb\'b5\'c3\'f7
+\f0 \
+\
+APKTOOL :\
+\cf2 apktool d *.apk 
+\f1 \cf0 \'bc\'b4\'bf\'c9\'bd\'ab
+\f0 apk
+\f1 \'b0\'fc\'bd\'e2\'d1\'b9\'b5\'bd
+\f0 apk
+\f1 \'c4\'bf\'c2\'bc\'cf\'c2
+\f0 \
+\
+dex2jar\
+\cf3 dex2jarTool classes.dex 
+\f1 \cf0 \'bc\'b4\'bf\'c9\'bd\'ab
+\f0 apk
+\f1 \'b0\'fc\'b1\'e4\'b3\'c9
+\f0 jar
+\f1 \'b0\'fc\'a1\'a3\'d6\'bb\'d3\'c3\'d3\'da\'b2\'e9\'bf\'b4\'d4\'b4\'c2\'eb\'ca\'b9\'d3\'c3\
+\
+baksmali (Dic2smali)\
+D\cf4 ic2smali classdex.dex outpath  \cf0 \'bd\'ab ou'toutpath\'c0\'ef\'c3\'e6\'b5\'c4smali\'c4\'bf\'c2\'bc\'b4\'f2\'b0\'fc\'b3\'c9dex\'ce\'c4\'bc\'fe\
+\
+\
+
+\f0 smali (smali2Dic)\
+\cf5 smali2Dic classes.dex  classout/ 
+\f1 \cf0 \'bd\'ab
+\f0 dex 
+\f1 \'bd\'e2\'d1\'b9\'b3\'c9smali.(apktool\'d2\'d1\'be\'ad\'b0\'fc\'ba\'ac\'c1\'cb\'a3\'a9\
+\
+jar2dex \
+\
+\cf6 jar2dex *.jar 
+\f0  
+\f1 \cf0 \'bd\'ab
+\f0 jar
+\f1 \'ce\'c4\'bc\'fe\'b4\'f2\'b0\'fc\'b3\'c9
+\f0 dex 
+\f1 \'ce\'c4\'bc\'fe\'a1\'a3
+\f0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+\cf0 \
+apkReTool \
+\cf3 apkReTool androidPathource \cf0  
+\f1 \'bd\'ab\'b7\'b4\'b1\'e0\'d2\'eb\'b5\'c4
+\f0 andandroid
+\f1 \'cf\'ee\'c4\'bf\'bb\'d8\'b1\'e0\'d2\'eb\'b3\'c9
+\f0 apk 
+\f1 \'c2\'b7\'be\'b6\'d4\'da
+\f0  dist/
+\f1 \'cf\'c2}

@@ -1,0 +1,14 @@
+#!/bin/bash
+oldwd=`pwd`
+prog="$0"
+progdir=`dirname "${prog}"`
+cd "${progdir}"
+progdir=`pwd`
+prog="${progdir}"/`basename "${prog}"`
+keystore=${progdir}/ApkToolPath/sgame_android.keystore
+#cp ${keystore} ${oldwd}/sgame.keystore
+apktool b $oldwd/$@
+read -p “reppackage-finish,next-sign” answer
+jarsigner -verbose -keystore sgame_android.keystore -storepass 989427 -keypass 989427  -signedjar $oldwd/$@/dist/$@_sign.apk $oldwd/$@/dist/$@.apk sgame_android.keystore
+read -p “sign-finish,next-verify” answer
+jarsigner -verify $oldwd/$@/dist/$@_sign.apk
